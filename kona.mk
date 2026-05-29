@@ -193,6 +193,13 @@ $(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,true)
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
+# Dolby MediaCodecs Dependenices
+PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_soft_common.vendor \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
