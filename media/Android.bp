@@ -32,3 +32,9 @@ prebuilt_etc {
     src: "video_system_specs.json",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "media_codecs_performance_c2_dolby.xml",
+    src: "media_codecs_performance_c2_dolby.xml",
+    vendor: true,
+}
